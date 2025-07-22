@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16pt;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  min-height: 80vh;
+  display: grid;
+  place-content: center;
+}
+
+main {
+  width: 28rem;
+  background: linear-gradient(152deg, rgb(20, 149, 233) 32%, rgb(20, 149, 233) 100%);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding: 1.2rem 1.5rem;
+  border-radius: 0.438rem;
+}
+
+.w-location, .w-string {
+  color: rgb(250, 250, 250);
+}
+
+.w-desc {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+img {
+  width: 4.375rem;
+  margin: auto;
+}
+
+ul {
+  list-style: none;
+  background: rgb(250, 250, 250);
+  border-radius: 0.438rem;
+  color: rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+li {
+  padding: 0.4rem;
+}
+
+li:not(:last-child) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.change-location {
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-size: 0.8rem;
+  width: 7rem;
+  margin: auto;
+  padding: 0.3rem;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.8);
+  background: linear-gradient(4deg, rgba(20, 149, 233, 0.5) 23%, rgba(255, 255, 255, 0.8) 100%);
+  transition: 0.3s linear;
+}
+.change-location:hover {
+  background: linear-gradient(152deg, rgb(20, 149, 233) 32%, rgb(20, 149, 233) 100%);
+  cursor: pointer;
+}
+.change-location:active {
+  transform: translateY(-2px);
+}
+
+/* modal */
+.modal {
+  display: none;
+  width: 100%;
+  height: 100%;
+  border: 1px solid;
+  position: fixed;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.6);
+  overflow: auto;
+  top: 0;
+}
+
+.modal-container {
+  max-width: 26rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding: 0.8rem 1rem;
+  background: #1495E9 linear-gradient(4deg, rgba(20, 149, 233, 0.5) 23%, rgba(255, 255, 255, 0.8) 100%);
+  margin-top: 2.8rem;
+}
+
+.modal-heading {
+  display: flex;
+  justify-content: space-between;
+}
+.modal-heading h3 {
+  color: #1495E9;
+}
+
+form {
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+}
+form input {
+  width: 100%;
+  padding-left: 0.5rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  font-size: 0.85rem;
+  caret-color: #1495E9;
+  outline: none;
+  transition: 0.3s linear;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+}
+form input:focus {
+  box-shadow: 0 4px 12px rgba(20, 149, 233, 0.2);
+}
+form label {
+  font-size: 0.85rem;
+}
+
+.save-location {
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-size: 0.8rem;
+  width: 7rem;
+  margin: auto;
+  padding: 0.3rem;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.8);
+  background: linear-gradient(4deg, rgba(20, 149, 233, 0.5) 23%, rgba(255, 255, 255, 0.8) 100%);
+  transition: 0.3s linear;
+  margin-top: 0.5rem;
+}
+.save-location:hover {
+  background: linear-gradient(152deg, rgb(20, 149, 233) 32%, rgb(20, 149, 233) 100%);
+  cursor: pointer;
+}
+.save-location:active {
+  transform: translateY(-2px);
+}
+
+svg {
+  fill: rgba(0, 0, 0, 0.7);
+}
+
+@media screen and (max-width: 37.5rem) {
+  body {
+    background: linear-gradient(152deg, rgb(20, 149, 233) 32%, rgb(20, 149, 233) 100%);
+    display: block;
+    place-content: unset;
+  }
+  main {
+    width: 100%;
+    padding: 1.2rem 1rem;
+    border-radius: unset;
+  }
+}
+@media screen and (max-width: 28.125rem) {
+  html {
+    font-size: 14pt;
+  }
+}/*# sourceMappingURL=style.css.map */
