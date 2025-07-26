@@ -95,6 +95,10 @@ li:not(:last-child) {
   top: 0;
 }
 
+.modal.active {
+  display: block;
+}
+
 .modal-container {
   max-width: 26rem;
   margin: auto;
@@ -114,12 +118,7 @@ li:not(:last-child) {
   color: #1495E9;
 }
 
-form {
-  display: flex;
-  gap: 0.5rem;
-  flex-direction: column;
-}
-form input {
+input {
   width: 100%;
   padding-left: 0.5rem;
   padding-top: 0.2rem;
@@ -131,10 +130,11 @@ form input {
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 3px;
 }
-form input:focus {
+input:focus {
   box-shadow: 0 4px 12px rgba(20, 149, 233, 0.2);
 }
-form label {
+
+label {
   font-size: 0.85rem;
 }
 

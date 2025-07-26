@@ -84,6 +84,9 @@ li:not(:last-child){
     overflow: auto;
     top: 0;
 }
+.modal.active{
+    display: block;
+}
 .modal-container{
     max-width: 26rem;
     margin: auto;
@@ -101,14 +104,9 @@ li:not(:last-child){
             color: v.$bg;
         }
 }
-form{
-    display: flex;
-    gap: .5rem;
-    -ms-flex-direction: column;
-    flex-direction: column;
-        input{
-            width: 100%;
-            padding-left: .5rem;
+input{
+    width: 100%;
+    padding-left: .5rem;
             padding-top: .2rem;
             padding-bottom: .2rem;
             font-size: .85rem;
@@ -121,10 +119,10 @@ form{
                     box-shadow: 0 4px 12px rgba(20, 149, 233, 0.2);
                 }
         }
-        label{
-            font-size: .85rem;
-        }
+label{
+    font-size: .85rem;
 }
+
 .save-location{
     @include btn();
     margin-top: .5rem;

@@ -4,22 +4,22 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="public/snowy_7774370.png" type="image/png">
+    <link rel="shortcut icon" href="/snowy_7774370.png" type="image/png">
     <title>Weather App</title>
     <link rel="stylesheet" href="src/styles/style.css">
     <script type="module" src="src/main.js"></script>
   </head>
   <body>
     <main>
-      <h1 class="w-location">Aba, Abia state</h1>
-      <h3 class="w-desc">Mostly Cloudy</h3>
-      <h3 class="w-string">79.8 F (26.6C)</h3>
-      <img src="/public/snowy_7774370.png" alt="current-weather" class="w-icon">
+      <h1 class="w-location"></h1>
+      <h3 class="w-desc"></h3>
+      <h3 class="w-string"></h3>
+      <img src="/snowy_7774370.png" alt="current-weather" class="w-icon">
       <ul>
-        <li class="w-humidity">Relative Humidity: 79%</li>
-        <li class="w-dewpoint">Dewpoint: 73 F (23 C)</li>
-        <li class="w-feelsLike">Feels Like: 84 F (29 C)</li>
-        <li class="w-wind">Wind from the SSE at 60 MPH</li>
+        <li class="w-humidity"></li>
+        <li class="w-dewPoint"></li>
+        <li class="w-feelsLike"></li>
+        <li class="w-wind"></li>
       </ul>
       <button class="change-location">Change Location</button>
     </main>
@@ -33,17 +33,11 @@
           </svg>
         </span>
       </div>
-        <form>
           <div class="city-container">
           <label for="city" class="w-city">City</label><br>
-          <input type="text" id="city">
-          </div>
-          <div class="state-container">
-          <label for="state" class="w-state">State</label><br>
-          <input type="text" id="state">
+          <input type="text" id="city" autocomplete="off">
           </div>
           <button class="save-location">Save Changes</button>
-        </form>
       </div>
     </div>
   </body>
