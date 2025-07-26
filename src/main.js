@@ -10,7 +10,6 @@ const ui = new Ui();
 document.addEventListener('DOMContentLoaded', getWeather);
 ui.submitChange.addEventListener('click', ()=>{
     const city = ui.cityValue.value
-    console.log(city)
     weather.changeLocation(city);
     storage.save(city)
     getWeather();
