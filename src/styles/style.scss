@@ -122,7 +122,33 @@ input{
 label{
     font-size: .85rem;
 }
-
+small{
+    color: red;
+    font-size: .7rem;
+    padding-left: 5px;
+    animation-name: waggle;
+    animation-duration: .7s;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    display: none;
+}
+small.active{
+    display: block;
+}
+@keyframes waggle{
+    0%{transform: translateX(0);}
+    25%{transform: translateX(5px);}
+    50%{transform: translateX(-2.5px);}
+    75%{transform: translateX(5px);}
+    100%{transform: translate(0);}
+    
+}
+// .city-container{
+//     animation-name: waggle;
+//     animation-duration: .5s;
+//     animation-iteration-count: 3;
+//     animation-direction: alternate;
+// }
 .save-location{
     @include btn();
     margin-top: .5rem;

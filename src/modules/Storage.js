@@ -1,4 +1,3 @@
-
 export class Storage{
     constructor(){
         this.city;

@@ -138,6 +138,38 @@ label {
   font-size: 0.85rem;
 }
 
+small {
+  color: red;
+  font-size: 0.7rem;
+  padding-left: 5px;
+  animation-name: waggle;
+  animation-duration: 0.7s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  display: none;
+}
+
+small.active {
+  display: block;
+}
+
+@keyframes waggle {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(5px);
+  }
+  50% {
+    transform: translateX(-2.5px);
+  }
+  75% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
 .save-location {
   font-family: "Ubuntu", sans-serif;
   font-style: normal;

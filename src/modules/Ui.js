@@ -14,6 +14,7 @@ export class Ui{
         this.submitChange = document.querySelector('.save-location');
         this.cityValue = document.querySelector('#city');
         this.modal = document.querySelector('.modal');
+        this.inputWarn = document.querySelector('small'); 
     }
     paint(weather){
         this.city.textContent = weather.location.name;
@@ -25,13 +26,6 @@ export class Ui{
         this.dewPoint.textContent = `Dewpoint: ${weather.current.dewpoint_c}C (${weather.current.dewpoint_f}F)`;
         this.wind.textContent = `Wind: From the ${weather.current.wind_dir} at ${weather.current.wind_mph}mph`;
     }
-    closeModal1(){
-        this.modal.addEventListener('click', ()=>{
-        if (this.modal.classList.contains('active')) {
-            this.modal.classList.remove('active');
-        }
-    })
-    }
     closeModal2(){
         this.close.addEventListener('click', ()=>{
             this.modal.classList.remove('active');
@@ -42,5 +36,4 @@ export class Ui{
             this.modal.classList.add('active');
         })
     }
-   
 }
